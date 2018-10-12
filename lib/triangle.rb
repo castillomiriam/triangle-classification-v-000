@@ -17,6 +17,10 @@ elsif one == two || two == three || one == three
 elsif one == two || two == three || one == three
   :isosceles
 else
+  :scalene
+end
+end
+
 
   class TriangleError < StandardError
 
