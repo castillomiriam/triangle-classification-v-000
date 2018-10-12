@@ -1,11 +1,11 @@
 class Triangle
 
-  attr_accessor :one, :two, :three
+  attr_accessor :s_one, :s_two, :s_three
 
-   def initialize(one, two, three)
-    @one = one
-    @two = two
-    @three = three
+   def initialize(s_one, s_two, s_three)
+    @s_one = s_one
+    @s_two = s_two
+    @s_three = s_three
   end
 
   def kind
