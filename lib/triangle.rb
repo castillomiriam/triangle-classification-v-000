@@ -9,14 +9,14 @@ class Triangle
   end
 
   def kind
-    if (one * two * three) == 0 || (one + two) <= three || (two + three) <= one || (three + one) <= two
+    if (s_one * s_two * s_three) == 0 || (s_one + s_two) <= s_three || (s_two + S_three) <= s_one || (s_three + s_one) <= s_two
       begin
         raise TriangleError
       end
 
-  elsif one == two && one == three
+  elsif s_one == s_two && s_one == s_three
       :equilateral
-    elsif one == two || two == three || one == three
+    elsif s_one == s_two || s_two == s_three || s_one == s_three
        :isosceles
     else
        :scalene
