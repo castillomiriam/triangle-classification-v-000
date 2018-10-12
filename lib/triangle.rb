@@ -5,16 +5,16 @@ class Triangle
     @s1 = s1
     @s2 = s2
     @s3 = s3
-  end    
-   #Is this a valid triangle? 
+  end
+   #Is this a valid triangle?
   #Raise error if not, (i.e. if any sides are not larger than 0. Or if The sum of the lengths of any two sides is smaller than the 3rd)
   def kind
     if (s1 * s2 * s3) == 0 || (s1 + s2) <= s3 || (s2 + s3) <= @s1 || (s3 + s1) <= s2
-      begin 
+      begin
         raise TriangleError
           #puts error.message
-      end   
-    
+      end
+
     #check for triangle types
     elsif s1 == s2 && s1 == s3
       :equilateral
@@ -24,7 +24,7 @@ class Triangle
        :scalene
     end
   end
- 
+
   class TriangleError < StandardError
     def message
       puts "Is not a triangle"
