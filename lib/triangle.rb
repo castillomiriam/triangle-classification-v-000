@@ -12,6 +12,8 @@ def kind
 begin
   raise TriangleError
 end
+elsif one == two || two == three || one == three
+  :equilateral
 
   class TriangleError < StandardError
 
