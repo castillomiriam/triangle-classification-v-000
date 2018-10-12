@@ -14,6 +14,7 @@ begin
 end
 elsif one == two || two == three || one == three
   :equilateral
+elsif one == two || two == three || one == three
 
   class TriangleError < StandardError
 
